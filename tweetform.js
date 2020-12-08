@@ -6,11 +6,12 @@ form.addEventListener('submit',function(e)
      const text2=document.querySelector('#Tweet');
      const bold=document.createElement('b');
      const tweeting=document.createElement('li');
+     const tweets=document.querySelector('#tweet_display')
      bold.append('@'+text1.value+':    ');
      tweeting.append(bold);
      tweeting.append(text2.value);
      if(text1.value!=''&&text2.value!='')
-        form.append(tweeting);
+        tweets.append(tweeting);
      text1.value='';
      text2.value='';
 });
