@@ -20,9 +20,37 @@ li{
 .tweetbox_container
 {
     margin-top:10px;
+    width:90%;
+    margin-right:5rem;
+    position:relative;
 }
 #center{
     height:100%;
-    width: 60%;
-    margin:auto;
+    width: 100%;
+    border:2px solid red;
 }
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main main right'
+      'menu footer footer footer footer footer';
+    grid-gap: 6px;
+    background-color: #022644;
+    padding: 10px;
+}
+#center
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 0;
+}
+.item1,.item2,.item4,.item5{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+#center { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
