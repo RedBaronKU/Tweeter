@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <h1>Form action</h1>
-    <form id="formtext" action="/button_magic.html">
-        <input type="text" name="username" id="Username" placeholder="Username">
-        <input type="text" name="tweet" id="Tweet" Placeholder="tweet">
-        <button>Submit</button>
-    </form>
+    <h1>Welcome to Tweeter</h1>
+    <div id="center">
+        <form id="formtext" action="/button_magic.html">
+            <input type="text" name="username" id="Username" placeholder="Username">
+            <div class="tweetbox_container">
+                <textarea class="tweetbox" id="Tweet" name="tweet" placeholder="Tweet something..." style="height:200px"></textarea>
+            </div>
+            <button>Submit</button>
+        </form>
+        <form id="form">
+            <button>Post a joke instead</button>
+        </form>
         <div id="tweet_display">
             <h1>Tweets:</h1>
         </div>
-    <script src="tweetform.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="tweetform.js"></script>
+    </div>
 </body>
 </html>
