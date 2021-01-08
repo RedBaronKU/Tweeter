@@ -1,8 +1,21 @@
+#tweet_display li{
+    list-style-type: none;
+    margin:2px;
+    border-bottom: 1px solid rgb(165, 165, 248);
+}
 li{
     list-style-type: none;
-    width: 250px;
-    height: 100px;
-    border: 3px solid darkblue ; 
+}
+#tweet_display
+{
+    
+    text-align: left;
+    width: 90%;
+    border-bottom: "10px solid ";
+
+}
+body{
+    background: rgb(31, 30, 30);
 }
 #form
 {
@@ -22,35 +35,88 @@ li{
     margin-top:10px;
     width:90%;
     margin-right:5rem;
-    position:relative;
+    
 }
 #center{
-    height:100%;
+    height:98%;
     width: 100%;
-    border:2px solid red;
+    position: relative;
+    margin:auto;
 }
 .grid-container {
     display: grid;
     grid-template-areas:
       'header header header header header header'
-      'menu main main main main right'
-      'menu footer footer footer footer footer';
+      'main main main main main right'
+      'footer footer footer footer footer footer';
     grid-gap: 6px;
-    background-color: #022644;
+    background-color: rgb(31, 30, 30);
     padding: 10px;
+    margin-left: 160px;
+    width: auto;
+    height: 100%;
+    box-sizing:border-box;
+    
 }
 #center
 {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(209, 207, 207, 0.8);
     padding: 5px 0;
+    
 }
-.item1,.item2,.item4,.item5{
-    background-color: rgba(255, 255, 255, 0.8);
+.menu {
+    height: 100%;
+    width: 170px;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(31, 30, 30);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.menu a {
+    padding: 6px 8px 6px 16px;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+.menu a:hover {
+    color: #f1f1f1;
+  }
+.item1,.item4,.item5{
+    background-color: rgba(252, 191, 191, 0.8);
     text-align: center;
     padding: 20px 0;
+    width: 100%;
+}
+@media screen and (max-height: 450px) {
+    .menu {padding-top: 15px;}
+    .menu a {font-size: 18px;}
 }
 .item1 { grid-area: header; }
-.item2 { grid-area: menu; }
 #center { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.item4 { grid-area: right;
+padding:0px;
+}
+.item5 {
+    grid-area: footer;
+}
+#footer{
+    color: #818181;
+    padding:0px;
+}
+#right{
+    padding: 0px;
+}
+#formtext
+{
+    margin:0px;
+    
+    padding:15px;
+    border-bottom: 10px solid rgb(31,32,32);
+    width: 100%;
+}

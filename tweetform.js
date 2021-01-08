@@ -6,6 +6,7 @@ form.addEventListener('submit',function(e)
      const text2=document.querySelector('#Tweet');
      const bold=document.createElement('b');
      const tweeting=document.createElement('li');
+     tweeting.style.borderBottom ="2px solid red";
      const tweets=document.querySelector('#tweet_display')
      bold.append('@'+text1.value+':    ');
      tweeting.append(bold);

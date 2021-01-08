@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
 </head>
 <body>
+    <div class="menu">
+        <a href="https://www.google.com"><i class="fa fa-id-badge" aria-hidden="true"></i>  Services</a>
+        <a href="https://www.google.com"><i class="fa fa-anchor" aria-hidden="true"></i>  About</a>
+        <a href="https://www.facebook.com"><i class="fa fa-fighter-jet" aria-hidden="true"></i>  Clients</a>
+        <a href="./Form_js.html"><i class="fa fa-magic" aria-hidden="true"></i>  Reset</a>
+        <form id="form">
+            <button>Post a joke instead</button>
+        </form>
+    </div>
     <div class="grid-container">
         <div class="item1"><h1>Welcome to Tweeter</h1></div>
-        <div class="item2">Menu</div>
         <div id="center">
             <form id="formtext" action="/button_magic.html">
                 <input type="text" name="username" id="Username" placeholder="Username">
@@ -18,17 +30,80 @@
                 </div>
                 <button>Submit</button>
             </form>
-            <form id="form">
-                <button>Post a joke instead</button>
-            </form>
+            
             <div id="tweet_display">
                 <h1>Tweets:</h1>
             </div>
             <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
             <script src="tweetform.js"></script>
         </div>
-        <div class="item4">Right</div>
-        <div class="item5">Footer</div>
-    </div>    
+        <div class="item4" id="right">
+            <ul>
+                <li>Apply for blah blah</li>
+                <li>Go to hell</li>
+                <li>Cancellation</li>
+            </ul>
+        </div>
+        <div class="item5" id="footer">
+            <div class="container-fluid p-5" style=" background: rgb(31, 30, 30);">
+                <div class="container p-4">
+                <div class="row footer-row">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <h5 class="footer-list-title">About Tweeter</h5>
+                <ul class="list-unstyled footer-list-menu">
+                <li><a href="#" target="_blank" style="color: #bebbbb;">Blah</a></li>
+                <li><a href="#" style="color: #bebbbb;">Contact</a></li>
+                </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-col">
+                <h5 class="footer-list-title">Doing Business</h5>
+                <ul class="list-unstyled footer-list-menu">
+                <li><a href="#" target="_blank" style="color: #bebbbb;">Battle Pass</a></li>
+                </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-col">
+                <h5 class="footer-list-title">Important Links</h5>
+                <ul class="list-unstyled footer-list-menu">
+                <li><a href="#" target="_blank" style="color: #bebbbb;">Apply for blah blah</a></li>
+                <li><a href="#" target="_blank" style="color: #bebbbb;">Go to hell</a></li>
+                <li><a href="nowhere" target="_blank" style="color: #bebbbb;">Cancellation</a></li>
+                </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-col">
+                <h5 class="mb-3 footer-list-title">Follow me</h5>
+                <ul class="list-unstyled footer-list-menu">
+                <li><a href="https://twitter.com/" target="_blank" style="color: #bebbbb;">Twitter</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" style="color: #bebbbb;">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank" style="color: #bebbbb;">Facebook</a></li>
+                </ul>
+                </div>
+                </div>
+                <hr style="background-color: #FFFFFF;">
+                <div class="row footer-row mt-4">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <div class="mb-1">
+                <p><img src="imgs/logo.png" alt="" height="100"></p>
+                <p class="copyright-text" style="text-align: left;">2020 © Tweeter. Made by Kumar Utkarsh parttime.</p>
+                <p class="last-text" style="text-align: left;">Lorem ipsum just to fill up. Lorem ipsum dolores ist ien forelw forelo Despacito</p>
+                </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="mb-1 nass">
+                <a href="#" target="_blank"><p class="mt-4">
+                </p></a>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+        </div>
+    </div>  
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 </html>
