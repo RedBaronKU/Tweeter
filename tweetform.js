@@ -3,7 +3,7 @@ form.addEventListener('submit',function(e)
 {
     e.preventDefault();
      const text1=document.querySelector('#Username');
-     const text2=document.querySelector('#Tweet');
+     const text2=document.querySelector('#tweet');
      const bold=document.createElement('b');
      const tweeting=document.createElement('li');
      tweeting.style.borderBottom ="2px solid red";
@@ -25,7 +25,6 @@ function jokeAdd(joke)
     li.append(bold);
     li.append(`${joke}`);
     ul.append(li);
-    console.log(joke)
 }
 async function dadJoke()
 {
@@ -38,3 +37,22 @@ formjoke.addEventListener('submit',function(e){
     e.preventDefault();
     dadJoke();
 })
+var el;                                                    
+function countCharacters(e) {                                    
+  var textEntered, countRemaining, counter;          
+  textEntered = document.getElementById('tweet').value;  
+  counter = (144 - (textEntered.length));
+  countRemaining = document.getElementById('charactersRemaining'); 
+  countRemaining.textContent = `You have ${counter} characters left`; 
+  if(counter<0)
+  {  
+     document.getElementById("tweetPoster").disabled = true;
+     counter=0;
+  }
+  if(counter>=0)
+  {
+   document.getElementById("tweetPoster").disabled = false;
+  }
+}
+el = document.getElementById('tweet');                   
+el.addEventListener('keyup', countCharacters);

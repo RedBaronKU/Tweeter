@@ -9,6 +9,9 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+    <script>
+        
+    </script>
 </head>
 <body>
     <div class="menu">
@@ -26,9 +29,10 @@
             <form id="formtext" action="/button_magic.html">
                 <input type="text" name="username" id="Username" placeholder="Username">
                 <div class="tweetbox_container">
-                    <textarea class="tweetbox" id="Tweet" name="tweet" placeholder="Tweet something..." style="height:200px"></textarea>
+                    <textarea class="tweetbox" id="tweet" name="tweet" placeholder="Tweet something..." style="height:200px"></textarea>
+                    <p id="charactersRemaining">You have 144 characters left</p>
                 </div>
-                <button>Submit</button>
+                <button id="tweetPoster">Submit</button>
             </form>
             
             <div id="tweet_display">
