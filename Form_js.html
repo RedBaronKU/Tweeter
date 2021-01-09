@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,44 +8,71 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
-    <script>
-        
-    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navBGColor">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.pinclipart.com/picdir/big/66-666389_birds-logo-template-for-clip-royalty-free-download.png" alt="" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
     <div class="menu">
         <a href="https://www.google.com"><i class="fa fa-id-badge" aria-hidden="true"></i>  Services</a>
         <a href="https://www.google.com"><i class="fa fa-anchor" aria-hidden="true"></i>  About</a>
         <a href="https://www.facebook.com"><i class="fa fa-fighter-jet" aria-hidden="true"></i>  Clients</a>
         <a href="./Form_js.html"><i class="fa fa-magic" aria-hidden="true"></i>  Reset</a>
         <form id="form">
-            <button>Post a joke instead</button>
+            <button class="btn btn-info">Post a joke instead</button>
         </form>
     </div>
     <div class="grid-container">
-        <div class="item1"><h1>Welcome to Tweeter</h1></div>
+        <div class="item1"><p><img src="https://www.pinclipart.com/picdir/big/66-666389_birds-logo-template-for-clip-royalty-free-download.png" alt="" height="30">
+           Welcome to Tweeter, Feel free to post your thoughts in here. Also let the world know who is typing them, by specifying your username, or simply hidebehind a mask and use an alias, we won't judge. Please respect the character limit.</p>
+        </div>
         <div id="center">
             <form id="formtext" action="/button_magic.html">
                 <input type="text" name="username" id="Username" placeholder="Username">
                 <div class="tweetbox_container">
                     <textarea class="tweetbox" id="tweet" name="tweet" placeholder="Tweet something..." style="height:200px"></textarea>
+                    <button id="tweetPoster" class="btn btn-primary">Tweet</button>
                     <p id="charactersRemaining">You have 144 characters left</p>
                 </div>
-                <button id="tweetPoster">Submit</button>
+                
             </form>
             
             <div id="tweet_display">
-                <h1>Tweets:</h1>
+                
             </div>
             <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
             <script src="tweetform.js"></script>
         </div>
         <div class="item4" id="right">
-            <ul>
-                <li>Apply for blah blah</li>
-                <li>Go to hell</li>
-                <li>Cancellation</li>
-            </ul>
+            <a href="https://www.google.com"><i class="fa fa-id-badge" aria-hidden="true"></i>  Services</a>
+            <a href="https://www.google.com"><i class="fa fa-anchor" aria-hidden="true"></i>  About</a>
+            <a href="https://www.facebook.com"><i class="fa fa-fighter-jet" aria-hidden="true"></i>  Clients</a>
+            <a href="./Form_js.html"><i class="fa fa-magic" aria-hidden="true"></i>  Reset</a>
         </div>
         <div class="item5" id="footer">
             <div class="container-fluid p-5" style=" background: rgb(31, 30, 30);">
@@ -56,7 +82,7 @@
                 <h5 class="footer-list-title">About Tweeter</h5>
                 <ul class="list-unstyled footer-list-menu">
                 <li><a href="#" target="_blank" style="color: #bebbbb;">Blah</a></li>
-                <li><a href="#" style="color: #bebbbb;">Contact</a></li>
+                <li><a href="mailto:utkarshdps@mail.com" style="color: #bebbbb;">Contact</a></li>
                 </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-col">
@@ -86,7 +112,7 @@
                 <div class="row footer-row mt-4">
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                 <div class="mb-1">
-                <p><img src="imgs/logo.png" alt="" height="100"></p>
+                <p style="text-align:left;"><img src="https://www.pinclipart.com/picdir/big/74-742702_joker-clipart-lips-picsart-joker-face-png-transparent.png" alt="" height="60"></p>
                 <p class="copyright-text" style="text-align: left;">2020 © Tweeter. Made by Kumar Utkarsh parttime.</p>
                 <p class="last-text" style="text-align: left;">Lorem ipsum just to fill up. Lorem ipsum dolores ist ien forelw forelo Despacito</p>
                 </div>
