@@ -1,6 +1,6 @@
-Hi,
+Basic java script Twitter
 
-Basic java script twitter, no styles yet but working on it.
-Different grids with different color for better visibility.
+Internet access required, all bootstraps, Jquery, images loaded from internet.
 
-<help me fix the right>
+Created Right<div> for Lulz... Might add some functionality in the Div.
+News API not working, because i'm unable to fix CORS error.
