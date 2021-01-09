@@ -1,21 +1,65 @@
-#tweet_display li{
+#tweet_display li
+{
+    color: rgb(224, 211, 211);
+    display: block;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    margin: 15px 5px;
+    padding: 10px 16px 16px 16px;
+    max-width: 868px;
     list-style-type: none;
-    margin:2px;
     border-bottom: 1px solid rgb(165, 165, 248);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.navBGColor{
+    background: rgb(37, 36, 36);
+}
+#tweetPoster{
+    float:right;
+}
+#Username
+{
+    background: rgb(31,32,32);
+    color: aliceblue;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(97, 96, 96);
+    width: 90%;
+}
+#Username:hover
+{
+    background: rgb(43, 44, 44);
+}
+#tweet_display li:hover
+{
+    background: rgb(70, 68, 68);
+}
+blockquote.twitter-tweet a:hover,
+blockquote.twitter-tweet a:focus {
+  text-decoration: underline;
 }
 li{
     list-style-type: none;
 }
 #tweet_display
 {
-    
+    padding: 20px;
     text-align: left;
     width: 90%;
     border-bottom: "10px solid ";
-
+    background: rgb(31, 30, 30);
 }
 body{
     background: rgb(31, 30, 30);
+}
+b{
+    display: block;
 }
 #form
 {
@@ -29,7 +73,8 @@ body{
   padding: 12px;
   border: 1px solid rgb(161, 161, 161);
   border-radius: 4px;
-  resize: vertical;
+  background: rgb(31,32,32);
+  color: aliceblue;
 }
 .tweetbox_container
 {
@@ -39,10 +84,13 @@ body{
     
 }
 #center{
-    height:98%;
-    width: 100%;
+    height:100%;
+    width:100%;
     position: relative;
     margin:auto;
+    background-color: rgb(31, 30, 30);
+    color: rgb(224, 211, 211);
+    padding: 5px 0;
 }
 .grid-container {
     display: grid;
@@ -50,7 +98,8 @@ body{
       'header header header header header header'
       'main main main main main right'
       'footer footer footer footer footer footer';
-    grid-gap: 6px;
+    grid-gap: 0px;
+    margin-top: 56px;
     background-color: rgb(31, 30, 30);
     padding: 10px;
     margin-left: 160px;
@@ -59,12 +108,7 @@ body{
     box-sizing:border-box;
     
 }
-#center
-{
-    background-color: rgba(209, 207, 207, 0.8);
-    padding: 5px 0;
-    
-}
+
 .menu {
     height: 100%;
     width: 170px;
@@ -76,8 +120,9 @@ body{
     background-color: rgb(31, 30, 30);
     overflow-x: hidden;
     padding-top: 20px;
+    margin-top: 56px;
 }
-.menu a {
+.menu a, #right{
     padding: 6px 8px 6px 16px;
     margin-top: 2rem;
     text-decoration: none;
@@ -89,10 +134,15 @@ body{
     color: #f1f1f1;
   }
 .item1,.item4,.item5{
-    background-color: rgba(252, 191, 191, 0.8);
     text-align: center;
     padding: 20px 0;
     width: 100%;
+}
+.item1{
+    background: rgb(31, 30, 30);
+    text-align: left;
+    font-family: 'Potta One', cursive;
+    color:rgb(0, 138, 92);
 }
 @media screen and (max-height: 450px) {
     .menu {padding-top: 15px;}
@@ -101,7 +151,9 @@ body{
 .item1 { grid-area: header; }
 #center { grid-area: main; }
 .item4 { grid-area: right;
-padding:0px;
+    padding:0px;
+    background: rgb(31, 30, 30);
+    color: beige;
 }
 .item5 {
     grid-area: footer;
@@ -112,6 +164,16 @@ padding:0px;
 }
 #right{
     padding: 0px;
+    height: 100%;
+    text-align: start;
+}
+#right a{
+    padding: 6px 8px 6px 16px;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
 }
 #formtext
 {
